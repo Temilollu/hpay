@@ -12,7 +12,7 @@ export const SidebarAccordionItem = ({
     <>
       <button
         onClick={onToggle}
-        className={`w-full flex items-center justify-between px-3 py-2 rounded hover:bg-neutral-100 transition`}
+        className={`w-full flex items-center justify-between px-3 py-2 rounded `}
       >
         <span className="flex items-center gap-2">
           {ButtonIcon && <ButtonIcon className="w-4 h-4" />}
@@ -25,7 +25,7 @@ export const SidebarAccordionItem = ({
         <ul className="ml-8 mt-1 mb-2 space-y-1">
           {children.map((child) => (
             <li key={child.label}>
-              <button className="w-full text-left text-sm text-neutral-700 hover:text-black hover:bg-neutral-100 rounded px-2 py-1">
+              <button className="w-full text-left text-sm text-neutral-700 rounded px-2 py-1">
                 {child.label}
               </button>
             </li>

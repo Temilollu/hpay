@@ -11,7 +11,7 @@ export const TimeRangeTabs = () => {
           key={range.value}
           onClick={() => setFilter(range.value)}
           className={clsx(
-            "px-3 py-1 text-sm font-medium",
+            "px-2 md:px-3 py-1 text-sm font-medium",
             filter === range.value
               ? "bg-white text-green-500"
               : "bg-white text-black",

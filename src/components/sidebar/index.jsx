@@ -10,8 +10,8 @@ export const Sidebar = () => {
   const toggle = (label) =>
     setOpen((prev) => ({ ...prev, [label]: !prev[label] }));
 
-  const content = (
-    <aside className="w-64 border-r bg-gray-100 border-black flex flex-col">
+  const sidebarContent = (
+    <aside className="w-64 h-full border-r bg-gray-100 border-black flex flex-col">
       <div className="h-16 flex items-center px-4 font-bold text-lg">
         <span className="w-6 h-6 bg-lime-200 text-black flex items-center justify-center mr-1">
           B
@@ -71,16 +71,16 @@ export const Sidebar = () => {
         </div>
       )}
 
-      <div className="hidden md:flex h-full">{content}</div>
+      <div className="hidden md:block h-full">{sidebarContent}</div>
 
       {mobileOpen && (
         <div className="fixed  inset-0 bg-black bg-opacity-40 z-40">
           <div className="fixed top-0 left-0 z-50 h-full overflow-y-scroll">
-            {content}
+            {sidebarContent}
           </div>
           <button
             onClick={() => setMobileOpen(false)}
-            className="fixed top-4 right-4 z-50 bg-white text-black p-2 rounded shadow"
+            className="fixed top-4 right-4 z-50 bg-white text-black p-2 rounded"
           >
             <X className="w-5 h-5" />
           </button>

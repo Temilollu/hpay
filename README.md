@@ -1,12 +1,26 @@
-# React + Vite
+# Habaripay Case Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was built using Vite with Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+I chose Tailwind because it allows me to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Build responsive layouts quickly
 
-## Expanding the ESLint configuration
+- Apply reusable utility classes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Maintain clean and consistent design without writing custom CSS
+
+Project Structure
+I organized the project into four main folders :
+
+- components/ – Contains reusable UI elements like the sidebar, topbar, etc.
+
+- utils/ – Holds helper files like dummy data or constants.
+
+- pages/ – Inspired by Next.js, this acts as the entry point for each module or section.
+
+- content/ – Stores the actual page content referenced by the pages folder.
+
+This structure makes the codebase easy to navigate
+
+Here's the link to the live project [Habaripay](https://habaripayy.netlify.app/)
